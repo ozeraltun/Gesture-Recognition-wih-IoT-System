@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Communication">
+
+    <Button
+        android:id="@+id/led_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:text="KapakAc"
+        app:layout_constraintBottom_toBottomOf="@+id/led_off"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/led_off" />
+
+    <Button
+        android:id="@+id/led_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kapakkapat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/led_on"
+        tools:layout_editor_absoluteY="109dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
